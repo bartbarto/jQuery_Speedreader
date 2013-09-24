@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bart's speedreader</title>
+<!--    Woor per woord tonen, snelheid kunnen annpassen-->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="text_container">
+        <textarea id="inputfield" class="form-control" placeholder="Geef hier uw tekst in" rows="15"></textarea>
+        <br>
+        <button class="btn btn-default pull-right" id="go_button">Read it!</button>
+    </div>
+    
+    <section id="showarea">
+        
+        <p id="word" class="lead">...</p>
+        
+        <div id="button_bar">
+            
+            <div class="pull-left">
+                <button class="btn btn-default" id="play_control">Play</button>
+            </div>
+            
+            <div class="pull-right">Speed &nbsp;&nbsp;&nbsp; <input type="text" id="speed_control" class="slider" data-slider-min="1" data-slider-max="600" data-slider-step="1" data-slider-value="200" data-slider-tooltip="hide"/></div>
+            
+        </div>
+        
+        <div id="close"><a href="#" id="close_button">X</a></div>
+        
+    </section>
+
+
+</body>
+</html>
